@@ -1,0 +1,21 @@
+<form [formGroup]="loginFrm" style="text-align: center; margin-top: 10%;" (submit)="login()">
+  <p>
+    <mat-form-field appearance="legacy">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" placeholder="Email" formControlName="email" >
+      <!-- <mat-icon matSuffix>user</mat-icon> -->
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="legacy">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" placeholder="Password" formControlName="password">
+      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </p>
+  <button mat-raised-button color="primary" type="submit">Login</button>
+</form>
+
+<!-- {{loginFrm.value | json}} -->
